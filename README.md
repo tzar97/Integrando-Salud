@@ -1,3 +1,11 @@
+- Tecnologias
+PHP: 8.3
+Laravel: 12
+Composer: 2
+MySQL: 8.x
+Node.js: >= 18
+NPM: >= 9
+
 - Instalar dependencias de Laravel:
     composer install
 
