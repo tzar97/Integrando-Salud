@@ -1,5 +1,6 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3'
+import { Link } from '@inertiajs/vue3'
 
 
 const props = defineProps({
@@ -60,5 +61,19 @@ const submit = () => {
          class="mt-4 p-3 bg-green-100 text-green-800 border border-green-300 rounded">
       {{ $page.props.flash.success }}
     </div>
+
+
+
+    <div class="mt-8 flex justify-center">
+      <Link
+        :href="route('menu')"
+        class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition"
+      >
+        ⬅️ Volver al Menú
+      </Link>
+    </div>
+
+
+
   </div>
 </template>

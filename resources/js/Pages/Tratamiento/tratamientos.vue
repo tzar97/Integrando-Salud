@@ -59,5 +59,20 @@ const props = defineProps({
         </tr>
       </tbody>
     </table>
+
+
+
+
+    <div class="mt-8 flex justify-center">
+      <Link
+        :href="route('menu')"
+        class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition"
+      >
+        ⬅️ Volver al Menú
+      </Link>
+    </div>
+
+
+    
   </div>
 </template>

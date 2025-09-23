@@ -1,5 +1,6 @@
 <script setup>
-import { Link, router} from '@inertiajs/vue3'
+import {router} from '@inertiajs/vue3'
+import { Link } from '@inertiajs/vue3'
 
 
 const props = defineProps({
@@ -135,5 +136,17 @@ const cambiarEstado = (id) => {
 
       />
     </div>
+
+
+    <div class="mt-8 flex justify-center">
+      <Link
+        :href="route('menu')"
+        class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition"
+      >
+        ⬅️ Volver al Menú
+      </Link>
+    </div>
+
+
   </div>
 </template>

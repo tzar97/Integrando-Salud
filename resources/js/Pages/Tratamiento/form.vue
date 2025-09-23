@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from 'vue'
 import { router } from '@inertiajs/vue3'
+import { Link } from '@inertiajs/vue3'
 
 const props = defineProps({
   pacienteId: Number,
@@ -42,5 +43,21 @@ const submit = () => {
         Guardar
       </button>
     </form>
+
+
+
+
+    <div class="mt-8 flex justify-center">
+      <Link
+        :href="route('menu')"
+        class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition"
+      >
+        ⬅️ Volver al Menú
+      </Link>
+    </div>
+
+
+
+    
   </div>
 </template>

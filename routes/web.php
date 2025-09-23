@@ -14,9 +14,7 @@ use App\Http\Controllers\TratamientoController;
                                         // MENU  
 
 
-Route::get('/', function () {return Inertia::render('Pacientes/Index');})->name('menu'); // tu menú principal
-
-
+Route::get('/', function () {return Inertia::render('Pacientes/Index');})->name('menu'); 
 
 
                                         //PACIENTES
